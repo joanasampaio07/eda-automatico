@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+```
+
+4. Commit
+
+#### **3.8 - Criar src/App.jsx** (O código principal)
+
+1. **"Add file"** → **"Create new file"**
+2. Nome: `src/App.jsx`
+3. **Cole TODO o código do sistema EDA** que eu criei anteriormente
+4. Commit
+
+---
+
+### **Passo 4: Publicar na Vercel**
+
+Agora vamos ao Vercel:
+
+1. Acesse: https://vercel.com
+2. Clique em **"Sign Up"**
+3. Escolha **"Continue with GitHub"**
+4. Autorize o Vercel a acessar sua conta GitHub
+5. Clique em **"Import Project"**
+6. Selecione o repositório `eda-automatica`
+7. Configure:
+   - **Framework Preset**: Vite
+   - **Build Command**: `npm run build`
+   - **Output Directory**: `dist`
+8. Clique em **"Deploy"**
+
+**Pronto!** Em 2-3 minutos seu site estará online! 🎉
+
+---
+
+## **🎯 MÉTODO 2: Netlify (Alternativa)**
+
+Se preferir Netlify:
+
+1. Acesse: https://netlify.com
+2. **"Sign up with GitHub"**
+3. **"Add new site"** → **"Import an existing project"**
+4. Conecte com GitHub
+5. Selecione `eda-automatica`
+6. Configure:
+   - **Build command**: `npm run build`
+   - **Publish directory**: `dist`
+7. **"Deploy site"**
+
+---
+
+## **📋 RESUMO - Arquivos que você precisa criar:**
+```
+eda-automatica/
+├── index.html
+├── package.json
+├── vite.config.js
+├── tailwind.config.js
+├── postcss.config.js
+└── src/
+    ├── main.jsx
+    ├── index.css
+    └── App.jsx (código do sistema EDA)
